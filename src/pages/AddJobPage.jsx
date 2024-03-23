@@ -36,7 +36,9 @@ const AddJobPage = ({ addJobSubmit }) => {
 
     toast.success('Job Added Successfully');
 
-    return navigate('/jobs');
+    setTimeout(() => { return navigate('/jobs'); }, 1000);
+
+    // return navigate('/jobs');
   };
 
   return (
