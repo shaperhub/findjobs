@@ -15,7 +15,7 @@ import EditJobPage from './pages/EditJobPage';
 const App = () => {
   // Add New Job
   const addJob = async (newJob) => {
-    const res = await fetch('http://localhost:9000/jobs', {
+    const res = await fetch('https://findjobsbackend-qyva.onrender.com/jobs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const App = () => {
 
   // Delete Job
   const deleteJob = async (id) => {
-    const res = await fetch(`http://localhost:9000/jobs/${id}`, {
+    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/${id}`, {
       method: 'DELETE',
     });
     return;
@@ -35,7 +35,7 @@ const App = () => {
 
   // Update Job
   const updateJob = async (job) => {
-    const res = await fetch(`http://localhost:9000/jobs/${job.id}`, {
+    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/${job.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

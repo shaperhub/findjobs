@@ -112,7 +112,7 @@ const JobPage = ({ deleteJob }) => {
 };
 
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`http://localhost:9000/jobs/${params.id}`);
+  const res = await fetch(`https://findjobsbackend-qyva.onrender.com/jobs/${params.id}`);
   const data = await res.json();
   return data;
 };
