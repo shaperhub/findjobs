@@ -35,7 +35,7 @@ const App = () => {
 
   // Update Job
   const updateJob = async (job) => {
-    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/${job.id}`, {
+    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/jobs/${job.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
