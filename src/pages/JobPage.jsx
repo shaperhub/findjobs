@@ -19,7 +19,7 @@ const JobPage = ({ deleteJob }) => {
 
     toast.success('Job deleted successfully');
 
-    navigate('/jobs');
+    setTimeout(() => { return navigate('/jobs'); }, 1500);
   };
 
   return (
