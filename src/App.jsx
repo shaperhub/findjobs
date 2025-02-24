@@ -27,7 +27,7 @@ const App = () => {
 
   // Delete Job
   const deleteJob = async (id) => {
-    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/${id}`, {
+    const res = await fetch(`https://findjobsbackend-qyva.onrender.com/jobs/${id}`, {
       method: 'DELETE',
     });
     return;
